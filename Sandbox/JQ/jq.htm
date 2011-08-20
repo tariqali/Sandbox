@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>JQuery Test Page</title>
+    <link rel="stylesheet" type="text/css" href="Images/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="CSS/dragdrop.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="CSS/tabs.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="CSS/ajaxtabs.css" />
+    <link rel="stylesheet" href="CSS/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="CSS/coda-slider-2.0.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../CSS/Global.css" type="text/css" media="screen" />
+    
+    <script type="text/javascript" src="Scripts/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.fancybox-1.2.6.pack.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.coda-slider-2.0.js"></script>
+</head>
+<body>
+    <div class="header"><a href="../Default.aspx">Welcome to My Sandbox</a></div>
+    <div class="subheader">Examples: <a href="../dojo.html">Dojo</a><a href="jq.htm">jQuery</a> <a href="../extjs/demo.html">ExtJS 4</a></div>
+    <div class="coda-slider-wrapper">
+    <div class="coda-slider preload" id="coda-slider-1">
+	    <div class="panel">
+		    <div class="panel-wrapper">
+			    <h2 class="title">Panel 1</h2>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Sed volutpat ante id mauris laoreet vestibulum. Nam blandit felis non neque cursus aliquet. Morbi vel enim dignissim massa dignissim commodo vitae quis tellus. Nunc non mollis nulla. Sed consectetur elit id mi consectetur bibendum. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis. Aliquam sit amet purus lectus. Maecenas tempor ornare sollicitudin.</p>
+		    </div>
+	    </div>
+	    <div class="panel">
+		    <div class="panel-wrapper">
+			    <h2 class="title">Panel 2</h2>
+			    <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+		    </div>
+	    </div>
+	    <div class="panel">
+		    <div class="panel-wrapper">
+			    <h2 class="title">Panel 3</h2>
+			    <p>Cras luctus fringilla odio vel hendrerit. Cras pulvinar auctor sollicitudin. Sed lacus quam, sodales sit amet feugiat sit amet, viverra nec augue. Sed enim ipsum, malesuada quis blandit vel, posuere eget erat. Sed a arcu justo. Integer ultricies, nunc at lobortis facilisis, ligula lacus vestibulum quam, id tincidunt sapien arcu in velit. Vestibulum consequat augue et turpis condimentum mollis sed vitae metus. Morbi leo libero, tincidunt lobortis fermentum eget, rhoncus vel sem. Morbi varius viverra velit vel tempus. Morbi enim turpis, facilisis vel volutpat at, condimentum quis erat. Morbi auctor rutrum libero sed placerat. Etiam ipsum velit, eleifend in vehicula eu, tristique a ipsum. Donec vitae quam vel diam iaculis bibendum eget ut diam. Fusce quis interdum diam. Ut urna justo, dapibus a tempus sit amet, bibendum at lectus. Sed venenatis molestie commodo.</p>
+		    </div>
+	    </div>
+	    <div class="panel">
+		    <div class="panel-wrapper">
+			    <h2 class="title">Panel 4</h2>
+			    <p>Nulla ultricies ornare erat, a rutrum lacus varius nec. Pellentesque vehicula lobortis dignissim. Ut scelerisque auctor eros sed porttitor. Nullam pulvinar ultrices malesuada. Quisque lobortis bibendum nisi et condimentum. Mauris quis erat vel dui lobortis dignissim.</p>
+		    </div>
+	    </div>
+	    <div class="panel">
+		    <div class="panel-wrapper">
+			    <h2 class="title">Panel 5</h2>
+			    <p>Nulla ultricies ornare porttitor. Nullam pulvinar ultrices malesuada. Quisque lobortis bibendum nisi et condimentum. Mauris quis erat vel dui lobortis dignissim.</p>
+		    </div>
+	    </div>
+    </div><!-- .coda-slider -->
+    </div><!-- .coda-slider-wrapper -->
+    <hr />
+     <h2>Ajax call</h2>
+     <input type="text" id="pageToLoad" value="Pages/Page1.aspx" /><input type="button" value="Load" id="load_basic" />
+     <div id="results">
+	 </div>
+    <hr />
+    <div class="contentToChange">
+        <h2>
+            Slide/Fade Toggle In/Out</h2>
+        <input type="button" value="Toggle It" class="buttonSFadeToggle" />
+        <p class="toggleParagraph">
+            Lorem ipsum <em>dolor</em> sit amet, consectetuer <em>adipiscing</em> elit, sed
+            diam nonummy nibh euismod <em>tincidunt</em> ut laoreet dolore magna aliquam erat
+            <strong>volutpat</strong>. Ut wisi enim ad minim <em>veniam</em>, quis nostrud exerci
+            <strong>tation</strong> ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.</p>
+        <span class="faded">
+            <p class="sfadeMe" style="display: none;">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <strong>molestie</strong>
+                consequat, vel illum <strong>dolore</strong> eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+                <strong>adipiscing</strong> elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat.</p>
+        </span>
+    </div>
+    <hr />
+    <h2 class="tabHead">
+        Ajax Tabs</h2>
+    <!-- tabs -->
+    <ul class="css-tabs">
+        <li><a href="Pages/Page1.aspx">Tab 1</a></li>
+        <li><a href="Pages/ajax2.htm">Second tab</a></li>
+        <li><a href="Pages/ajax3.htm">An ultra long third tab</a></li>
+    </ul>
+    <!-- single pane -->
+    <div class="css-panes">
+        <div style="display: block">
+        </div>
+    </div>
+    <h2>
+        Tabs</h2>
+    <!-- the tabs -->
+    <ul class="tabs">
+        <li><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+    </ul>
+    <!-- tab "panes" -->
+    <div class="panes">
+        <div>
+            First tab content. Tab contents are called "panes"</div>
+        <div>
+            Second tab content</div>
+        <div>
+            Third tab content</div>
+    </div>
+    <hr />
+    <div class="contentToChange">
+        <h2>
+            Slide In/Out</h2>
+        <input type="button" value="Slide In" class="buttonBslidedown" />
+        <input type="button" value="Slide Out" class="buttonBslideup" /><br />
+        <p class="firstparagraph">
+            Lorem ipsum <em>dolor</em> sit amet, consectetuer <em>adipiscing</em> elit, sed
+            diam nonummy nibh euismod <em>tincidunt</em> ut laoreet dolore magna aliquam erat
+            <strong>volutpat</strong>. Ut wisi enim ad minim <em>veniam</em>, quis nostrud exerci
+            <strong>tation</strong> ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.</p>
+        <p class="secondparagraph" style="display: none;">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <strong>molestie</strong>
+            consequat, vel illum <strong>dolore</strong> eu feugiat nulla facilisis at vero
+            eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+            <strong>adipiscing</strong> elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+    <hr />
+    <div class="contentToChange">
+        <h2>
+            Slide Toggle In/Out</h2>
+        <input type="button" value="Toggle Text" class="buttonToggle" />
+        <p class="toggleParagraph">
+            Lorem ipsum <em>dolor</em> sit amet, consectetuer <em>adipiscing</em> elit, sed
+            diam nonummy nibh euismod <em>tincidunt</em> ut laoreet dolore magna aliquam erat
+            <strong>volutpat</strong>. Ut wisi enim ad minim <em>veniam</em>, quis nostrud exerci
+            <strong>tation</strong> ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.</p>
+        <p class="toggleMe" style="display: none;">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <strong>molestie</strong>
+            consequat, vel illum <strong>dolore</strong> eu feugiat nulla facilisis at vero
+            eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+            <strong>adipiscing</strong> elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+    <hr />
+    <div class="contentToChange">
+        <h2>
+            Fade Toggle In/Out</h2>
+        <input type="button" value="Fade In" class="buttonFadeIn" />
+        <input type="button" value="Fade Out" class="buttonFadeOut" />
+        <p class="toggleParagraph">
+            Lorem ipsum <em>dolor</em> sit amet, consectetuer <em>adipiscing</em> elit, sed
+            diam nonummy nibh euismod <em>tincidunt</em> ut laoreet dolore magna aliquam erat
+            <strong>volutpat</strong>. Ut wisi enim ad minim <em>veniam</em>, quis nostrud exerci
+            <strong>tation</strong> ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat.</p>
+        <p class="fadeMe" style="display: none;">
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse <strong>molestie</strong>
+            consequat, vel illum <strong>dolore</strong> eu feugiat nulla facilisis at vero
+            eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+            <strong>adipiscing</strong> elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+    </div>
+    <hr />
+    <h2>
+        FancyBox v1.2.6</h2>
+    <a class="zoom" rel="group" title="2 B Pic" href="../Images/2_b.jpg">
+        <img src="../Images/2_s.jpg" alt="" /></a> <a class="zoom" rel="group" title="3 B Pic"
+            href="../Images/3_b.jpg">
+            <img src="../Images/3_s.jpg" alt="" /></a> <a class="zoom" rel="group" title="4 B Pic"
+                href="../Images/4_b.jpg">
+                <img src="../Images/4_s.jpg" alt="" /></a> <a class="zoom" rel="group" title="5 B Pic"
+                    href="../Images/5_b.jpg">
+                    <img src="../Images/5_s.jpg" alt="" /></a>
+    <hr />
+    <h2>
+        Draggable Box</h2>
+    <div style="height: 110px;">
+        <div id="demo1_box" class="box handle">
+            A Draggable Box
+            <input type="text" size="10" value="No drag..." />
+            <input type="button" value="No drag..." />
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $("input.buttonBslidedown").click(function(){ $("div.contentToChange").find("p.secondparagraph:hidden").slideDown("slow"); });
+        $("input.buttonBslideup").click(function(){ $("div.contentToChange").find("p.secondparagraph:visible").slideUp("slow"); });
+        $("input.buttonToggle").click(function(){ $("p.toggleMe").slideToggle("slow"); });
+        $("input.buttonFadeIn").click(function(){ $("p.fadeMe").fadeIn("slow"); });
+        $("input.buttonFadeOut").click(function(){ $("p.fadeMe").fadeOut("slow"); });
+        $.fn.slideFadeToggle = function(speed, easing, callback) {
+            return this.animate({opacity: 'toggle', height: 'toggle'}, speed,
+            easing, callback);};
+        $("input.buttonSFadeToggle").click(function(){ $("p.sfadeMe").slideFadeToggle("slow") } );
+        $("a.zoom").fancybox();
+        $("a.zoom1").fancybox({'overlayOpacity':0.7,'overlayColor':'#FFF'});
+        $("a.zoom2").fancybox({'zoomSpeedIn':500,'zoomSpeedOut':500});
+        $("#demo1_box").bind('drag',function( event ){$( this ).css({top: event.offsetY,left: event.offsetX});});
+        $("ul.tabs").tabs("div.panes > div");
+        $("ul.css-tabs").tabs("div.css-panes > div", {effect: 'ajax'});
+    	$.ajaxSetup ({cache: false});
+	    var ajax_load = "<img class='loading' src='../images/load.gif' alt='loading...' />";
+	    var urlToLoad = document.getElementById("pageToLoad").value;
+	    $("#load_basic").click(function(){$("#results").html(ajax_load).load($("#pageToLoad").val());});
+		$('#coda-slider-1').codaSlider();
+	    //$("#result").html(ajax_load).load(loadUrl)
+    });
+    </script>
+
+</body>
+</html>

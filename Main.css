@@ -3,8 +3,9 @@ body
     background-color: #ddd;
 }
 
-.Header
+h1
 {
     font-size: 22px;
     color: #aa44aa;
+    font-family: verdana, arial;
 }

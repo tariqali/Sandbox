@@ -68,8 +68,8 @@
 
 </head>
 <body>
-    <div class="header"><a href="/Default.aspx">Welcome to My Sandbox</a></div>
-    <div class="subheader">Examples: <a href="/dojo.html">Dojo</a><a href="/JQ/jq.htm">jQuery</a> <a href="/extjs/demo.html">ExtJS 4</a></div>
+    <div class="header"><a href="./Default.aspx">Welcome to My Sandbox</a></div>
+    <div class="subheader">Examples: <a href="./dojo.html">Dojo</a><a href="./JQ/jq.htm">jQuery</a> <a href="./extjs/demo.html">ExtJS 4</a></div>
     <div class="MainContent">
     <h2>RegEx Tester</h2>
     <div>

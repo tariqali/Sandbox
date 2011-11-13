@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Sandbox", "Sandbox\", "{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Sandbox"
 		Debug.AspNetCompiler.PhysicalPath = "Sandbox\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Sandbox\"

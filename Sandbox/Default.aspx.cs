@@ -31,11 +31,12 @@ public partial class _Default : System.Web.UI.Page
         }
         return sb.ToString();
     }
+
     protected void PopulateDDL(object sender, EventArgs e)
     {
         using (SqlConnection sConn = new SqlConnection(ConfigurationManager.ConnectionStrings["AdventureWorksConnection"].ConnectionString))
         {
-            using (SqlCommand sqc = new SqlCommand("select top 10 ContactID, EmailAddress from Person.Contact order by ContactID"))
+            using (SqlCommand sqc = new SqlCommand("select top 10 BusinessEntityID, LastName from Person.Person order by BusinessEntityID"))
             {
                 sqc.Connection = sConn;
                 sConn.Open();
@@ -45,7 +46,7 @@ public partial class _Default : System.Web.UI.Page
                     {
                         while (sqr.Read())
                         {
-                            ddlContacts.Items.Add(new ListItem(sqr["EmailAddress"].ToString(), sqr["ContactID"].ToString()));
+                            ddlContacts.Items.Add(new ListItem(sqr["LastName"].ToString(), sqr["BusinessEntityID"].ToString()));
                         }
                     }
                 }

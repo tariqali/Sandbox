@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Sandbox", "Sandbox\", "{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -31,16 +31,16 @@ Global
 		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|.NET.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|.NET.Build.0 = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Any CPU.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Mixed Platforms.Build.0 = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|.NET.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|.NET.Build.0 = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Any CPU.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
-		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|.NET.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{92FC4C67-52F3-42AB-AFF1-C5D30FBF0694}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

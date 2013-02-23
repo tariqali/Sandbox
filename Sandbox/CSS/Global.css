@@ -107,3 +107,7 @@ input
 {
  background-color: #412C84;   
 }
+
+a {
+    color: white !important;
+}

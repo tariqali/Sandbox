@@ -58,10 +58,9 @@
     </script>
 </head>
 <body>
-    <div class="header">
-        <a href="./Default.aspx">Welcome to My Sandbox</a></div>
+        <div class="header"><a href="./Default.aspx">Welcome to My Sandbox</a></div>
     <div class="subheader">
-        Examples: <a href="./JQ/jq.htm">jQuery</a> <a href="./extjs/demo.html">
+        Examples: <a href="./jq/jq.htm">jQuery</a> <a href="./extjs/demo.html">
             ExtJS 4</a> <a href="./kendo/examples/web/index.html">Kendo</a></div>
     <div class="MainContent">
         <h2>
